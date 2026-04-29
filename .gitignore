@@ -1,0 +1,26 @@
+# 민감 데이터 차단
+*.bak
+*.log
+*.tmp
+.env
+.env.local
+
+# 빌드/캐시
+node_modules/
+__pycache__/
+*.pyc
+
+# OS 파일
+.DS_Store
+Thumbs.db
+
+# 에디터
+.vscode/
+.idea/
+*.swp
+*~
+
+# 서버 데이터/백업 (절대 push 금지)
+server/
+backups/
+plugins-pinned.txt
