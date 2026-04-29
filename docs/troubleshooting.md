@@ -63,7 +63,7 @@
 
 ## 🐛 그래도 안 되면
 
-다음 정보를 모아서 [Issue 등록](../../issues/new?template=connection_help.md):
+다음 정보를 모아서 [Issue 등록](https://github.com/BiQnT/mc-totak/issues/new?template=connection_help.md):
 - 본인 OS (Windows / Mac / Linux + 버전)
 - Minecraft 런처 버전
 - Minecraft 클라 버전

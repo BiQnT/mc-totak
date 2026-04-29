@@ -69,4 +69,4 @@ A. 회장단 협의 후 결정. 기본은 총학생회 소속 학생 한정.
 A. 본 저장소가 학생용 가이드. 서버 자체는 Paper 오픈소스 + 공개 플러그인 조합. 운영 스크립트는 운영진 내부.
 
 ---
-질문이 더 있다면 Discord `#질문` 채널 또는 [Issue 등록](../../issues/new/choose).
+질문이 더 있다면 Discord `#질문` 채널 또는 [Issue 등록](https://github.com/BiQnT/mc-totak/issues/new/choose).

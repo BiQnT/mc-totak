@@ -1,0 +1,85 @@
+site_name: 총학생회 봉건제 마인크래프트 서버
+site_description: 9개 국서가 황제국과 영주국으로 나뉘어 한 학기 동안 영토·자원·외교를 두고 경쟁하는 봉건 정치 시뮬레이션 마크 서버
+site_url: https://sadasdad.store
+site_author: 총학생회 운영진
+
+repo_url: https://github.com/BiQnT/mc-totak
+repo_name: BiQnT/mc-totak
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: ko
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: 다크모드 전환
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: 라이트모드 전환
+  font:
+    text: Noto Sans KR
+    code: D2Coding
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - 홈: index.md
+  - 빠른 접속: JOIN-GUIDE.md
+  - 룰북: RULEBOOK.md
+  - 자주 묻는 질문: FAQ.md
+  - 안 들어갈 때: troubleshooting.md
+  - 9 국서 좌표: nation-map.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search:
+      lang: ko
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/BiQnT/mc-totak
+  generator: false
+
+copyright: "© 2026 총학생회 — 문서 CC-BY-SA-4.0"
