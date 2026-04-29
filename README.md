@@ -3,9 +3,9 @@
 > 11개 도장(gym)을 도전하며 포켓몬을 잡고 챔피언에 도전하는 학생회 멀티플레이 서버.
 
 [![Status](https://img.shields.io/badge/status-v1%20%EC%9A%B4%EC%98%81%EC%A4%91-success)](#)
-[![Edition](https://img.shields.io/badge/edition-Java%201.21.1-blue)](https://www.minecraft.net/download)
-[![Mod](https://img.shields.io/badge/mod-Pixelmon%209.3.14-yellow)](https://www.curseforge.com/minecraft/mc-mods/pixelmon)
-[![Loader](https://img.shields.io/badge/loader-NeoForge%2021.1.228-orange)](https://neoforged.net)
+[![Edition](https://img.shields.io/badge/edition-Java%201.16.5-blue)](https://www.minecraft.net/download)
+[![Mod](https://img.shields.io/badge/mod-Pixelmon%20Reforged%209.1.13-yellow)](https://www.curseforge.com/minecraft/mc-mods/pixelmon)
+[![Loader](https://img.shields.io/badge/loader-Forge%2036.2.39-orange)](https://neoforged.net)
 [![License](https://img.shields.io/badge/docs-CC--BY--SA--4.0-lightgrey)](LICENSE)
 
 ## 🚀 빠른 접속 정보
@@ -13,12 +13,12 @@
 | 정보 | 값 |
 |------|-----|
 | **서버 주소** | **`policies-untagged.gl.joinmc.link`** |
-| **마크 버전** | **Java Edition 1.21.1** ⚠️ (모드 호환 위해 정확한 버전 필요) |
-| **모드 로더** | **NeoForge 21.1.228** |
-| **모드** | **Pixelmon 9.3.14** (Pokemon Reforged 신 버전) |
+| **마크 버전** | **Java Edition 1.16.5** ⚠️ (모드 호환 위해 정확한 버전 필요) |
+| **모드 로더** | **Forge 36.2.39** |
+| **모드** | **Pixelmon Reforged 9.1.13** (Pokemon Reforged 신 버전) |
 | **모드** | 화이트리스트 ON — 운영진 사전 등록 필요 |
 
-⚠️ **이 서버는 vanilla로 접속 불가** — Pixelmon mod + NeoForge 1.21.1을 클라이언트에 설치해야 입장 가능.
+⚠️ **이 서버는 vanilla로 접속 불가** — Pixelmon mod + Forge 1.16.5을 클라이언트에 설치해야 입장 가능.
 
 [자세한 클라 설치 가이드 →](docs/JOIN-GUIDE.md)
 
@@ -70,7 +70,7 @@
 
 ## 🎨 비주얼 (선택)
 
-- **OptiFine + 셰이더**: 클라 측 설치 (서버 무관). NeoForge와 호환되는 셰이더 모드는 **Oculus + Embeddium** (Forge용 OptiFine 대체)
+- **OptiFine + 셰이더**: 클라 측 설치 (서버 무관). Forge와 호환되는 셰이더 모드는 **Oculus + Embeddium** (Forge용 OptiFine 대체)
 - **Conquest 리소스팩**: 중세 비주얼이라 포켓몬과 컨셉이 다름 — 비추천. 대신 **Faithful 32x** 또는 **Pixel Reality**가 Pixelmon에 어울림
 
 ---
@@ -78,8 +78,8 @@
 ## 🔧 기술 스택 (운영진용)
 
 - 호스트: i7-8700 + 16GB RAM + Ubuntu 22.04
-- 서버 측: NeoForge 21.1.228 (MC 1.21.1) + Pixelmon 9.3.14
-- Java 21 (NeoForge 1.21+ 표준)
+- 서버 측: Forge 36.2.39 (MC 1.16.5) + Pixelmon Reforged 9.1.13
+- Java 8 (Forge 1.21+ 표준)
 - 외부 접속: Playit.gg TCP tunnel (무료)
 - systemd unit: `mc-pokemon.service`
 - 자동 백업: 04:00 KST 일일

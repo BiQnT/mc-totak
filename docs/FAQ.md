@@ -36,14 +36,14 @@ A. 11 배지 모두 모은 학생만. 챔피언 = 회장단 NPC. 학기 종료 1
 ### Q. 핑이 너무 높아요
 A. Playit.gg 무료 tunnel 경유라 ~150-200ms 정상. 한국 서버지만 Sydney(호주) Playit router 통과.
 
-### Q. NeoForge가 자꾸 충돌해요
-A. Java 21 사용 중인지 확인. Minecraft Launcher가 자동 처리하지만, 직접 설치 시 OpenJDK 21 (https://adoptium.net) 권장.
+### Q. Forge가 자꾸 충돌해요
+A. Java 8 사용 중인지 확인. Minecraft Launcher가 자동 처리하지만, 직접 설치 시 OpenJDK 21 (https://adoptium.net) 권장.
 
 ### Q. 다른 모드도 같이 쓸 수 있나요?
 A. 클라 측 모드(셰이더, 미니맵, 인벤토리 정리 등)는 OK. 단, **서버 통신에 영향 주는 모드** (X-Ray, 자동 채굴 등)는 BAN 사유.
 
 ### Q. 셰이더 가능?
-A. NeoForge 호환 **Oculus + Embeddium** 모드 + 일반 셰이더팩 (BSL, Complementary 등). 프레임 손실 큼 — RTX 권장.
+A. Forge 호환 **Oculus + Embeddium** 모드 + 일반 셰이더팩 (BSL, Complementary 등). 프레임 손실 큼 — RTX 권장.
 
 ## 커뮤니티
 

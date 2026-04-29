@@ -111,7 +111,7 @@ gantt
 
 ## 🔧 기술 스택 (운영진용)
 
-- Paper 1.21.11 + OpenJDK 21 + Ubuntu 22.04
+- Paper 1.16.51 + OpenJDK 21 + Ubuntu 22.04
 - Towny 0.102 + SiegeWar 3.3 (정치/전쟁)
 - WorldGuard 7.0 + LuckPerms 5.5 + CoreProtect 23 (운영)
 - EssentialsX 2.21 + PlaceholderAPI 2.12 (편의)
