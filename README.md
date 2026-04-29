@@ -10,7 +10,7 @@
 
 | 정보 | 값 |
 |------|-----|
-| **서버 주소** | `mc-totak.<도메인>` *(운영진이 도메인 확정 시 업데이트)* |
+| **서버 주소** | **`policies-untagged.gl.joinmc.link`** ← 이 주소를 그대로 붙여넣기 |
 | **에디션** | **Minecraft Java Edition 1.21.x만 지원** ⚠️ |
 | **포트** | 25565 (기본 — 주소만 입력하면 자동) |
 | **모드** | 화이트리스트 ON — 운영진 사전 등록 필요 |
@@ -100,7 +100,7 @@
 - Towny 0.102 + SiegeWar 3.3 (정치/전쟁)
 - WorldGuard 7.0 + LuckPerms 5.5 + CoreProtect 23 (운영)
 - EssentialsX 2.21 + PlaceholderAPI 2.12 (편의)
-- Cloudflare Tunnel (외부 접속)
+- Playit.gg TCP tunnel (외부 접속, 무료)
 
 ---
 
