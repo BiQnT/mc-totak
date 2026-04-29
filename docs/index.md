@@ -1,122 +1,76 @@
-# 🏰 총학생회 영지 마인크래프트 서버
+# 🎮 총학생회 포켓몬 도장깨기 서버
 
-> 9개 국서가 황제국과 영주국으로 나뉘어 한 학기 동안 영토·자원·외교를 두고 경쟁하는 영지 정치 시뮬레이션 마크 서버.
+> 11개 도장(gym)을 도전하며 포켓몬을 잡고 챔피언에 도전하는 학생회 멀티플레이 서버.
 
 ## 🚀 빠른 접속
 
 !!! tip "서버 주소"
     **`policies-untagged.gl.joinmc.link`** ← 마크 클라에서 이 한 줄을 그대로 붙여넣기
 
-!!! warning "에디션 주의"
-    **Java Edition 1.21.x만 지원** — Bedrock(모바일·콘솔판) 접속 불가.
+!!! warning "버전 / 모드 필수"
+    **Java Edition 1.16.5 + Forge 1.16.5-36.2.39 + Pixelmon Reforged 9.1.13** 클라이언트 설치 필요. vanilla로는 접속 불가.
 
-[자세한 접속 가이드 →](JOIN-GUIDE.md){ .md-button .md-button--primary }
+[자세한 설치 가이드 →](JOIN-GUIDE.md){ .md-button .md-button--primary }
 [안 들어갈 때 →](troubleshooting.md){ .md-button }
 
-## 📋 3단계로 끝나는 첫 접속
+## 📋 클라이언트 설치 6단계 요약
 
-=== "1️⃣ Java Edition 설치"
-    1. <https://www.minecraft.net/download> 접속
-    2. Minecraft Launcher 다운로드 + 설치
-    3. Microsoft 계정 로그인 (정품 라이센스 필요)
+=== "1️⃣ MC 1.16.5 설치"
+    Minecraft Launcher → 새 프로파일 → `release 1.16.5` 선택 → 한 번 실행해서 다운로드
 
-    > Bedrock Edition (모바일·콘솔)은 호환 안 됨.
+=== "2️⃣ Forge 설치"
+    https://files.minecraftforge.net/net/minecraftforge/forge/index_1.16.5.html → Installer 다운 → 더블클릭 → "Install client"
 
-=== "2️⃣ 서버 등록"
-    1. Minecraft 실행 → **멀티플레이** 클릭
-    2. **서버 추가** 클릭
-    3. 서버 주소: `policies-untagged.gl.joinmc.link`
+=== "3️⃣ Pixelmon mod"
+    https://www.curseforge.com/minecraft/mc-mods/pixelmon (1.16.5 필터) → `Pixelmon-1.16.5-9.1.13-universal.jar` 다운
 
-=== "3️⃣ 화이트리스트 등록"
-    운영진에게 본인 Minecraft 닉네임 전달 → 등록 받기.
-    
-    등록 안 된 상태에서 접속 시도하면 `Not whitelisted on this server` 오류.
+=== "4️⃣ mods/ 폴더"
+    Mac: `~/Library/Application Support/minecraft/mods/` <br>
+    Windows: `%appdata%\.minecraft\mods\` <br>
+    여기에 jar 복사
 
-## 🏛️ 9개 국서 (Nations)
+=== "5️⃣ Forge 프로파일 실행"
+    Launcher → "Forge 1.16.5" 프로파일 선택 → PLAY
 
-| 국서 | 위상 | 영토 방위 |
-|------|------|-----------|
-| **회장단** | 👑 황제국 | 정북 (월드 spawn에서 가장 가까움) |
-| 사무총괄국 | 🛡️ 영주국 | 동 |
-| 재정관리국 | 🛡️ 영주국 | 남동 |
-| 대외협력국 | 🛡️ 영주국 | 남 |
-| 미래전략실 | 🛡️ 영주국 | 남서 |
-| 비서실 | 🛡️ 영주국 | 서 |
-| 나눔복지국 | 🛡️ 영주국 | 북서 |
-| 문화기획국 | 🛡️ 영주국 | 북 (회장단 너머) |
-| 소통연결국 | 🛡️ 영주국 | 북동 |
+=== "6️⃣ 서버 접속"
+    멀티플레이 → 서버 추가 → `policies-untagged.gl.joinmc.link`
 
-!!! note "영지 위계는 룰로 강제"
-    Towny 시스템상으로는 9개 동등 nation이지만, 룰북·Discord 권위로 영지 위계가 강제됩니다. 황제국 함락 시나리오(반란)도 SiegeWar로 가능 — 정치 다이내믹의 핵심.
+## 🏛️ 게임 컨셉
 
-[영지 위계 자세히 보기 →](RULEBOOK.md)
+| 요소 | 설명 |
+|------|------|
+| **Region** | 맵에 분산된 여러 region — 각자 특정 포켓몬 spawn |
+| **11 도장** | 운영진/학생 도장관 보유 — 배틀 승리 시 배지 |
+| **챔피언** | 11 배지 모두 모으면 회장단(챔피언) 도전권 |
+| **트레이너** | 맵 NPC들과 배틀해서 EXP/돈 |
 
-## 🗓️ 학기 일정 (8~10주)
+!!! note "도장 깨기 룰"
+    상세 룰은 [RULEBOOK.md](RULEBOOK.md) 참조. 친선·정식 배틀 구분, 그리핑 처벌, 챔피언 토너먼트 등.
 
-```mermaid
-gantt
-    title 학기 일정
-    dateFormat YYYY-MM-DD
-    axisFormat %m-%d
-    section 운영진
-    인프라 구축       :2026-04-29, 7d
-    학생 5명 베타     :7d
-    section 학생
-    정식 오픈+정착    :7d
-    빌드업            :14d
-    영토 확장+외교    :14d
-    전쟁 빌드업       :14d
-    section 클라이맥스
-    선포 윈도우       :7d
-    전쟁 충돌(1회)    :7d
-    결과 정리         :7d
-```
+## 🗓️ 학기 일정
 
 | 주차 | 활동 |
 |------|------|
-| -2주 | 인프라 구축 (운영진) |
-| -1주 | 학생 5명 베타 |
-| 1주 | 정식 오픈 — 자국 정착 |
-| 2~3주 | 빌드업 — 농사·자원·건설 |
-| 4~5주 | 영토 확장 / 외교 |
-| 6~7주 | 전쟁 빌드업 — 동맹·자원 비축 |
-| 8주 | **선포 윈도우** |
-| 9주 | **단 1회 SiegeWar 충돌** |
-| 10주 | 결과 정리 + 후일담 |
-
-## 💰 경제 시스템
-
-- **12개 직업** (광부, 농부, 사냥꾼, 어부, 건축가, 나무꾼, 도굴꾼, 탐험가, 장인, 양조사, 마법사, 무기장)
-- 활동(광산질·농사·낚시·사냥)에 따라 자동으로 **에메랄드** 적립
-- **QuickShop** 상점 시스템 — chest+sign으로 자유 거래
-- **Slimefun** — 다이아 너머의 자원·아이템 (다마스쿠스 강철, 제트팩 등)
-
-```
-/jobs browse  → 직업 목록
-/jobs join 광부 → 가입
-/balance     → 잔고
-/sf guide    → Slimefun 가이드북
-```
-
-## 🎨 비주얼
-
-- **Conquest 리소스팩**: 첫 접속 시 자동 다운 권장 (중세 사실적 비주얼)
-- **OptiFine + 셰이더** (선택, 클라 측): 더 화려한 비주얼
+| 1주 | 정식 오픈 — 시작 마을 + 첫 포켓몬 1마리 |
+| 2~3주 | 1~3번 도장 도전 |
+| 4~5주 | 중급 도장 + 트레이너 배틀 |
+| 6~7주 | 상급 도장 + 전설 포켓몬 |
+| 8~9주 | 11 배지 → 챔피언 도전권 |
+| 10주 | **챔피언 토너먼트** |
 
 ## 🛠️ 도움 요청
 
-- **접속이 안 돼요** → [트러블슈팅](troubleshooting.md) 먼저 확인 → [Issue 등록](https://github.com/BiQnT/mc-totak/issues/new/choose)
-- **그리핑 신고** → Discord `#그리핑신고` (좌표·시간·증거)
-- **룰 문의** → Discord `#질문`
+- 모드 설치 / 접속 문제 → [troubleshooting.md](troubleshooting.md) → [Issue 등록](https://github.com/BiQnT/mc-totak/issues/new/choose)
+- Discord `#질문` / `#그리핑신고`
 
 ## 🔧 기술 스택 (운영진용)
 
-- Paper 1.16.51 + OpenJDK 21 + Ubuntu 22.04
-- Towny 0.102 + SiegeWar 3.3 (정치/전쟁)
-- WorldGuard 7.0 + LuckPerms 5.5 + CoreProtect 23 (운영)
-- EssentialsX 2.21 + PlaceholderAPI 2.12 (편의)
-- Playit.gg TCP tunnel (외부 접속, 무료)
+- 서버: Minecraft Forge 36.2.39 (MC 1.16.5)
+- 모드: Pixelmon Reforged 9.1.13
+- 호스트: i7-8700 / 16GB RAM / Ubuntu 22.04
+- Java 8
+- 외부 접속: Playit.gg TCP tunnel (무료)
 
 ---
 
-📅 작성: 2026-04-29 / 🤖 deep-interview → consensus plan → autopilot 파이프라인으로 셋업
+📅 첫 오픈: 2026-04-30
