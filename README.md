@@ -1,6 +1,6 @@
-# 🏰 총학생회 봉건제 마인크래프트 서버
+# 🏰 총학생회 영지 마인크래프트 서버
 
-> 9개 국서가 황제국과 영주국으로 나뉘어 한 학기 동안 영토·자원·외교를 두고 경쟁하는 봉건 정치 시뮬레이션 마크 서버.
+> 9개 국서가 황제국과 영주국으로 나뉘어 한 학기 동안 영토·자원·외교를 두고 경쟁하는 영지 정치 시뮬레이션 마크 서버.
 
 [![Status](https://img.shields.io/badge/status-v1%20%EC%84%A4%EC%B9%98%20%EC%99%84%EB%A3%8C-success)](#)
 [![Edition](https://img.shields.io/badge/edition-Java%201.21.x-blue)](https://www.minecraft.net/download)
@@ -42,7 +42,7 @@
 | 문서 | 내용 |
 |------|------|
 | [JOIN-GUIDE.md](docs/JOIN-GUIDE.md) | 단계별 접속 가이드 (스크린샷 포함) |
-| [RULEBOOK.md](docs/RULEBOOK.md) | 봉건제 룰북 — 위계, 평화기, SiegeWar, 그리핑 |
+| [RULEBOOK.md](docs/RULEBOOK.md) | 영지 룰북 — 위계, 평화기, SiegeWar, 그리핑 |
 | [FAQ.md](docs/FAQ.md) | 자주 묻는 질문 |
 | [troubleshooting.md](docs/troubleshooting.md) | 안 들어갈 때 체크리스트 |
 | [nation-map.md](docs/nation-map.md) | 9 국서 좌표 표 |
@@ -63,7 +63,7 @@
 | 문화기획국 | 🛡️ 영주국 | 북 (회장단 너머) |
 | 소통연결국 | 🛡️ 영주국 | 북동 |
 
-> Towny 시스템상으로는 9개 동등 nation이지만, **봉건 위계는 룰북·Discord 권위로 강제**됩니다. 황제국 함락 시나리오(반란)도 SiegeWar로 가능 — 정치 다이내믹의 핵심 장치.
+> Towny 시스템상으로는 9개 동등 nation이지만, **영지 위계는 룰북·Discord 권위로 강제**됩니다. 황제국 함락 시나리오(반란)도 SiegeWar로 가능 — 정치 다이내믹의 핵심 장치.
 
 ---
 
