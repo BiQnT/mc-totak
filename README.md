@@ -83,6 +83,22 @@
 
 ---
 
+## 💰 경제 시스템
+
+| 명령어 | 설명 |
+|--------|------|
+| `/jobs browse` | 12개 직업 (광부, 농부, 사냥꾼, 어부, 건축가, 나무꾼, ...) |
+| `/jobs join <직업>` | 직업 가입 (한 명이 여러 직업 가능) |
+| `/balance` | 에메랄드 잔고 |
+| `/pay <상대> <금액>` | 송금 |
+| `/qs help` | 상점 만들기 (QuickShop) |
+| `/sf guide` | Slimefun 가이드북 (강력한 자원·아이템) |
+
+## 🎨 비주얼 (선택)
+
+- **Conquest 리소스팩**: 첫 접속 시 자동 다운로드 prompt → Yes 권장 (중세 비주얼)
+- **OptiFine + 셰이더**: 학생 본인 PC에 설치 (서버 무관)
+
 ## 🛠️ 도움 요청
 
 - **접속이 안 돼요** → [troubleshooting.md](docs/troubleshooting.md) 먼저 확인 → 안 되면 [Issue 등록](../../issues/new/choose)

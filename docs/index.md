@@ -84,6 +84,25 @@ gantt
 | 9주 | **단 1회 SiegeWar 충돌** |
 | 10주 | 결과 정리 + 후일담 |
 
+## 💰 경제 시스템
+
+- **12개 직업** (광부, 농부, 사냥꾼, 어부, 건축가, 나무꾼, 도굴꾼, 탐험가, 장인, 양조사, 마법사, 무기장)
+- 활동(광산질·농사·낚시·사냥)에 따라 자동으로 **에메랄드** 적립
+- **QuickShop** 상점 시스템 — chest+sign으로 자유 거래
+- **Slimefun** — 다이아 너머의 자원·아이템 (다마스쿠스 강철, 제트팩 등)
+
+```
+/jobs browse  → 직업 목록
+/jobs join 광부 → 가입
+/balance     → 잔고
+/sf guide    → Slimefun 가이드북
+```
+
+## 🎨 비주얼
+
+- **Conquest 리소스팩**: 첫 접속 시 자동 다운 권장 (중세 사실적 비주얼)
+- **OptiFine + 셰이더** (선택, 클라 측): 더 화려한 비주얼
+
 ## 🛠️ 도움 요청
 
 - **접속이 안 돼요** → [트러블슈팅](troubleshooting.md) 먼저 확인 → [Issue 등록](https://github.com/BiQnT/mc-totak/issues/new/choose)
