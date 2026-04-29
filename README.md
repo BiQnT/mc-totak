@@ -1,39 +1,26 @@
-# 🏰 총학생회 영지 마인크래프트 서버
+# 🎮 총학생회 포켓몬 도장깨기 서버
 
-> 9개 국서가 황제국과 영주국으로 나뉘어 한 학기 동안 영토·자원·외교를 두고 경쟁하는 영지 정치 시뮬레이션 마크 서버.
+> 11개 도장(gym)을 도전하며 포켓몬을 잡고 챔피언에 도전하는 학생회 멀티플레이 서버.
 
-[![Status](https://img.shields.io/badge/status-v1%20%EC%84%A4%EC%B9%98%20%EC%99%84%EB%A3%8C-success)](#)
-[![Edition](https://img.shields.io/badge/edition-Java%201.21.x-blue)](https://www.minecraft.net/download)
+[![Status](https://img.shields.io/badge/status-v1%20%EC%9A%B4%EC%98%81%EC%A4%91-success)](#)
+[![Edition](https://img.shields.io/badge/edition-Java%201.21.1-blue)](https://www.minecraft.net/download)
+[![Mod](https://img.shields.io/badge/mod-Pixelmon%209.3.14-yellow)](https://www.curseforge.com/minecraft/mc-mods/pixelmon)
+[![Loader](https://img.shields.io/badge/loader-NeoForge%2021.1.228-orange)](https://neoforged.net)
 [![License](https://img.shields.io/badge/docs-CC--BY--SA--4.0-lightgrey)](LICENSE)
 
-## 🚀 빠른 접속 (3분 컷)
+## 🚀 빠른 접속 정보
 
 | 정보 | 값 |
 |------|-----|
-| **서버 주소** | **`policies-untagged.gl.joinmc.link`** ← 이 주소를 그대로 붙여넣기 |
-| **에디션** | **Minecraft Java Edition 1.21.x만 지원** ⚠️ |
-| **포트** | 25565 (기본 — 주소만 입력하면 자동) |
+| **서버 주소** | **`policies-untagged.gl.joinmc.link`** |
+| **마크 버전** | **Java Edition 1.21.1** ⚠️ (모드 호환 위해 정확한 버전 필요) |
+| **모드 로더** | **NeoForge 21.1.228** |
+| **모드** | **Pixelmon 9.3.14** (Pokemon Reforged 신 버전) |
 | **모드** | 화이트리스트 ON — 운영진 사전 등록 필요 |
 
-### 1단계 — Minecraft 설치
-- **Java Edition** 다운로드: https://www.minecraft.net/download
-- ⚠️ **Bedrock Edition (모바일·콘솔판) 절대 X**
-- 처음 설치하면 자동으로 최신 버전(1.21.x)으로 설치됨
+⚠️ **이 서버는 vanilla로 접속 불가** — Pixelmon mod + NeoForge 1.21.1을 클라이언트에 설치해야 입장 가능.
 
-### 2단계 — Microsoft 계정 로그인
-- 정품 라이센스 필요 (학생 라이센스 또는 본인 라이센스)
-- 라이센스 없으면 운영진 문의
-
-### 3단계 — 서버 추가
-1. Minecraft 실행 → **멀티플레이** 클릭
-2. **서버 추가** → 서버 이름: `총학생회 서버` / 서버 주소: 위의 서버 주소 입력
-3. **완료** → 서버 목록에서 클릭하면 접속 시도
-
-### 4단계 — 화이트리스트 등록 확인
-- 본인 Minecraft 닉네임을 운영진에게 미리 전달해두기
-- 운영진이 등록하지 않으면 `Not whitelisted on this server` 오류
-
-⏩ **첫 접속 후**: 자국 leader에게 Discord 또는 채팅으로 초대 요청 → leader가 `/t add <닉네임>` 으로 추가
+[자세한 클라 설치 가이드 →](docs/JOIN-GUIDE.md)
 
 ---
 
@@ -41,83 +28,62 @@
 
 | 문서 | 내용 |
 |------|------|
-| [JOIN-GUIDE.md](docs/JOIN-GUIDE.md) | 단계별 접속 가이드 (스크린샷 포함) |
-| [RULEBOOK.md](docs/RULEBOOK.md) | 영지 룰북 — 위계, 평화기, SiegeWar, 그리핑 |
+| [JOIN-GUIDE.md](docs/JOIN-GUIDE.md) | Pixelmon 클라 설치 + 서버 접속 (15분 소요, 한 번만) |
+| [RULEBOOK.md](docs/RULEBOOK.md) | 도장깨기 룰 — 11 gym, 챔피언 도전, 그리핑 처벌 |
 | [FAQ.md](docs/FAQ.md) | 자주 묻는 질문 |
-| [troubleshooting.md](docs/troubleshooting.md) | 안 들어갈 때 체크리스트 |
-| [nation-map.md](docs/nation-map.md) | 9 국서 좌표 표 |
+| [troubleshooting.md](docs/troubleshooting.md) | 모드 안 깔릴 때 / 접속 안 될 때 |
 
 ---
 
-## 🏛️ 9 국서 (Nations)
+## 🎯 게임 컨셉
 
-| 국서 | 위상 | 영토 방위 |
-|------|------|-----------|
-| 회장단 | 👑 황제국 | 정북 (월드 spawn에서 가장 가까움) |
-| 사무총괄국 | 🛡️ 영주국 | 동 |
-| 재정관리국 | 🛡️ 영주국 | 남동 |
-| 대외협력국 | 🛡️ 영주국 | 남 |
-| 미래전략실 | 🛡️ 영주국 | 남서 |
-| 비서실 | 🛡️ 영주국 | 서 |
-| 나눔복지국 | 🛡️ 영주국 | 북서 |
-| 문화기획국 | 🛡️ 영주국 | 북 (회장단 너머) |
-| 소통연결국 | 🛡️ 영주국 | 북동 |
-
-> Towny 시스템상으로는 9개 동등 nation이지만, **영지 위계는 룰북·Discord 권위로 강제**됩니다. 황제국 함락 시나리오(반란)도 SiegeWar로 가능 — 정치 다이내믹의 핵심 장치.
+| 요소 | 설명 |
+|------|------|
+| **도시 / Region** | 맵 안에 여러 region — 각 region마다 특정 포켓몬 spawn |
+| **11 도장** | 운영진 또는 학생 도장관이 관리. 도전자 → 도장관 배틀 → 승리 시 배지 |
+| **챔피언 (회장단)** | 11 배지 모두 모은 도전자만 챔피언 도전 가능 |
+| **트레이너 NPC** | 맵 곳곳에 NPC 트레이너. 배틀 → 경험치/돈 |
+| **포켓볼·아이템** | 자연 spawn + 상점 구매. 마스터볼은 챔피언 보상 |
 
 ---
 
-## 🗓️ 학기 일정 (8~10주)
+## 🗓️ 운영 일정
 
 | 주차 | 활동 |
 |------|------|
-| -2주 | 인프라 구축 (운영진) |
-| -1주 | 학생 5명 베타 |
-| 1주 | 정식 오픈 — 자국 정착 |
-| 2~3주 | 빌드업 — 농사·자원·건설 |
-| 4~5주 | 영토 확장 / 외교 |
-| 6~7주 | 전쟁 빌드업 — 동맹·자원 비축 |
-| 8주 | **선포 윈도우** |
-| 9주 | **단 1회 SiegeWar 충돌** |
-| 10주 | 결과 정리 + 후일담 |
+| 1주 | 정식 오픈 — 시작 마을 + 자기 포켓몬 1마리 선택 |
+| 2~3주 | 첫 번째~세 번째 도장 도전 |
+| 4~5주 | 중급 도장 + 트레이너 배틀 |
+| 6~7주 | 상급 도장 + 전설 포켓몬 도전 |
+| 8~9주 | 11 배지 수집 → 챔피언 도전권 |
+| 10주 | **챔피언 토너먼트** — 우승자 발표 |
 
 ---
-
-## 💰 경제 시스템
-
-| 명령어 | 설명 |
-|--------|------|
-| `/jobs browse` | 12개 직업 (광부, 농부, 사냥꾼, 어부, 건축가, 나무꾼, ...) |
-| `/jobs join <직업>` | 직업 가입 (한 명이 여러 직업 가능) |
-| `/balance` | 에메랄드 잔고 |
-| `/pay <상대> <금액>` | 송금 |
-| `/qs help` | 상점 만들기 (QuickShop) |
-| `/sf guide` | Slimefun 가이드북 (강력한 자원·아이템) |
-
-## 🎨 비주얼 (선택)
-
-- **Conquest 리소스팩**: 첫 접속 시 자동 다운로드 prompt → Yes 권장 (중세 비주얼)
-- **OptiFine + 셰이더**: 학생 본인 PC에 설치 (서버 무관)
 
 ## 🛠️ 도움 요청
 
-- **접속이 안 돼요** → [troubleshooting.md](docs/troubleshooting.md) 먼저 확인 → 안 되면 [Issue 등록](../../issues/new/choose)
+- **모드 설치 막힘** → [JOIN-GUIDE](docs/JOIN-GUIDE.md) + [troubleshooting](docs/troubleshooting.md) 참조 → 안 풀리면 [Issue 등록](../../issues/new/choose)
+- **포켓몬 배틀 룰 문의** → Discord `#질문` 채널
 - **그리핑 신고** → Discord `#그리핑신고` 채널 (좌표·시간·증거)
-- **룰 문의** → Discord `#질문` 채널
 
 ---
 
-## 🔧 운영진용
+## 🎨 비주얼 (선택)
 
-서버 운영자(donghyun)는 별도 운영 가이드를 봅니다 — 이 저장소는 학생용입니다.
-
-기술 스택:
-- Paper 1.21.11 + OpenJDK 21 + Ubuntu 22.04
-- Towny 0.102 + SiegeWar 3.3 (정치/전쟁)
-- WorldGuard 7.0 + LuckPerms 5.5 + CoreProtect 23 (운영)
-- EssentialsX 2.21 + PlaceholderAPI 2.12 (편의)
-- Playit.gg TCP tunnel (외부 접속, 무료)
+- **OptiFine + 셰이더**: 클라 측 설치 (서버 무관). NeoForge와 호환되는 셰이더 모드는 **Oculus + Embeddium** (Forge용 OptiFine 대체)
+- **Conquest 리소스팩**: 중세 비주얼이라 포켓몬과 컨셉이 다름 — 비추천. 대신 **Faithful 32x** 또는 **Pixel Reality**가 Pixelmon에 어울림
 
 ---
 
-📅 작성: 2026-04-29 / 🤖 deep-interview → consensus plan → autopilot 파이프라인으로 셋업
+## 🔧 기술 스택 (운영진용)
+
+- 호스트: i7-8700 + 16GB RAM + Ubuntu 22.04
+- 서버 측: NeoForge 21.1.228 (MC 1.21.1) + Pixelmon 9.3.14
+- Java 21 (NeoForge 1.21+ 표준)
+- 외부 접속: Playit.gg TCP tunnel (무료)
+- systemd unit: `mc-pokemon.service`
+- 자동 백업: 04:00 KST 일일
+
+---
+
+📅 첫 오픈: 2026-04-30 / 🤖 deep-interview → consensus plan → autopilot → Pokemon pivot

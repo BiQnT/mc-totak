@@ -2,71 +2,56 @@
 
 ## 일반
 
-### Q. 서버 무료인가요?
-A. 네, 운영비는 운영진이 부담합니다. 학생은 라이센스 비용만 본인 부담.
+### Q. Minecraft 라이센스 없어요
+A. https://www.minecraft.net 에서 ~33,000원에 구매. 학생 라이센스(Education Edition)는 **불가** — 표준 Java Edition 필요.
 
-### Q. Minecraft 라이센스가 없어요.
-A. https://www.minecraft.net 에서 약 ~33,000원에 구매 가능. 학생 라이센스(`Minecraft Education Edition`)는 본 서버 비호환이니 표준 Java Edition을 사야 합니다.
+### Q. Bedrock Edition (모바일·콘솔) 가능?
+A. **불가** — Pixelmon은 Java Edition 전용.
 
-### Q. Bedrock Edition (모바일/Xbox/PS)으로 접속 가능한가요?
-A. **불가능합니다.** PC용 Java Edition만 가능합니다. 만약 아이폰·갤럭시·콘솔에서 Minecraft를 샀다면 그건 다른 버전으로, 본 서버에는 들어올 수 없습니다.
-
-### Q. 서버 운영 시간은?
-A. 기본 24시간 (best-effort). 가끔 운영진 정비로 잠시 멈출 수 있습니다. Discord에서 공지.
-
-### Q. 학기 끝나면 서버 닫나요?
-A. v1은 한 학기(8~10주) 운영 후 종료. 결과 정리 후 다음 학기 v2 여부 결정. 월드 데이터는 백업 보관.
+### Q. 모드 설치가 너무 어려워요
+A. [JOIN-GUIDE](JOIN-GUIDE.md) 단계별 가이드 따라하세요. 그래도 안 되면 [troubleshooting](troubleshooting.md). 안 풀리면 Discord #질문 또는 GitHub Issue.
 
 ## 게임 플레이
 
-### Q. PvP 켜져 있나요?
-A. 평소엔 OFF. 학기말 단 1회 SiegeWar 전쟁 윈도우에서만 켜집니다. 룰북 §3 참고.
+### Q. 첫 포켓몬은 어떻게 받나요?
+A. 시작 마을 spawn 근처 NPC 또는 운영진 채팅 요청. 일반적으로 9개 어시스턴트 포켓몬(피카츄·이상해씨·파이리·꼬부기 등) 중 1마리 선택.
 
-### Q. 그리핑(다른 사람 영토 부수기) 가능?
-A. **금지.** 적발 시 1차 경고+롤백 / 2차 24시간 ban / 3차 영구 ban. 룰북 §5 참고.
+### Q. 야생 포켓몬은 어디서 잡나요?
+A. region별로 spawn 종류 다름. `/spawning` 으로 현재 위치 spawn 종류 확인.
 
-### Q. 동맹 시스템 있나요?
-A. v1에서는 게임 메커니즘으로는 없음. Discord/채팅 기반 비공식 외교만 가능. v2에서 검토.
+### Q. 도장은 어디 있나요?
+A. 맵에 11개 분산 배치. `/struc list` 로 가까운 구조물 확인. 운영진이 도장 위치 좌표 안내.
 
-### Q. 세금 시스템은?
-A. v1 미포함. 자유 경제. v2 검토.
+### Q. 배틀 보상은?
+A. 트레이너 배틀 승리 → 돈 + EXP. 도장 승리 → 배지 + 돈 + 마법 아이템 (운영진 룰).
 
-### Q. 회장단(황제국)은 운영진과 다른가요?
-A. 회장단은 **영지 위계상 황제**이지만, 그 중 1명만 admin 권한 보유 (player-admin 겸직). admin 사용은 Discord 사전 공지 룰. 룰북 §6 참고.
+### Q. 다른 학생과 배틀?
+A. `/pokebattle <상대닉>` → 상대 수락 시 배틀 시작. 친선 배틀 또는 토너먼트.
 
-### Q. 회장단이 영주국에 일방적으로 전쟁 선포할 수 있나요?
-A. **원칙적으로 불가**. 영주국의 명백한 룰 위반 시 운영진 협의 후 가능. 반대로 영주국이 황제국에 반란을 거는 것은 자유.
+### Q. 챔피언 도전 자격?
+A. 11 배지 모두 모은 학생만. 챔피언 = 회장단 NPC. 학기 종료 1주 전 토너먼트 형태.
 
-### Q. 영주국끼리 전쟁하려면?
-A. 황제국(회장단) 승인 필요. Discord `#전쟁선포` 채널에 의도 발표 → 승인 → SiegeWar 명령으로 개시.
+## 기술
 
-## 기술 / 접속
+### Q. 핑이 너무 높아요
+A. Playit.gg 무료 tunnel 경유라 ~150-200ms 정상. 한국 서버지만 Sydney(호주) Playit router 통과.
 
-### Q. 핑이 너무 높아요.
-A. Cloudflare Tunnel 경유라 학내 네트워크보다 약간 더 걸릴 수 있습니다. 200ms 이내면 정상.
+### Q. NeoForge가 자꾸 충돌해요
+A. Java 21 사용 중인지 확인. Minecraft Launcher가 자동 처리하지만, 직접 설치 시 OpenJDK 21 (https://adoptium.net) 권장.
 
-### Q. 자꾸 끊겨요.
-A. 본인 와이파이 안정성 먼저 확인. 본인 PC 사양도. 그래도 자주 끊기면 troubleshooting.md 보고 Issue 등록.
+### Q. 다른 모드도 같이 쓸 수 있나요?
+A. 클라 측 모드(셰이더, 미니맵, 인벤토리 정리 등)는 OK. 단, **서버 통신에 영향 주는 모드** (X-Ray, 자동 채굴 등)는 BAN 사유.
 
-### Q. 서버 IP가 바뀌었어요.
-A. Cloudflare 도메인 자체는 안 바뀜. 만약 도메인 자체가 변경되면 Discord 공지.
-
-### Q. 모드(Forge/Fabric) 사용 가능?
-A. 클라이언트에 모드 설치한 상태로는 **접속 시도하지 마세요** — 비호환. 본 서버는 Paper(서버 측 플러그인)만 사용. 클라이언트는 Vanilla Java Edition 1.21.x.
-
-### Q. 셰이더는?
-A. 셰이더는 클라 측 시각효과라 OK. Optifine/Iris 등은 자유.
+### Q. 셰이더 가능?
+A. NeoForge 호환 **Oculus + Embeddium** 모드 + 일반 셰이더팩 (BSL, Complementary 등). 프레임 손실 큼 — RTX 권장.
 
 ## 커뮤니티
 
-### Q. Discord 어떻게 들어가요?
-A. 운영진이 보낸 초대 링크 사용. 못 받았으면 운영진에게 문의.
+### Q. Discord 들어가는 법
+A. 운영진이 보낸 초대 링크. 못 받았으면 운영진에게 문의.
 
-### Q. 다른 학교 학생 데려와도 되나요?
-A. 회장단 협의 후 결정. 기본은 총학생회 소속 학생 한정.
-
-### Q. 서버 코드(소스) 공개 안 하나요?
-A. 본 저장소가 학생용 가이드. 서버 자체는 Paper 오픈소스 + 공개 플러그인 조합. 운영 스크립트는 운영진 내부.
+### Q. 다른 학교 학생 데려와도?
+A. 회장단 협의 후 결정. 기본은 학생회 소속 한정.
 
 ---
-질문이 더 있다면 Discord `#질문` 채널 또는 [Issue 등록](https://github.com/BiQnT/mc-totak/issues/new/choose).
+질문 더 있으면 [Issue 등록](https://github.com/BiQnT/mc-totak/issues/new/choose) 또는 Discord #질문.
