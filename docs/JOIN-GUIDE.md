@@ -77,12 +77,35 @@
 ## 룰북 필독
 첫 접속 후 [RULEBOOK.md](RULEBOOK.md) 한 번 읽으세요. 그리핑·전쟁·황제권한 등 룰을 모르면 페널티 가능.
 
-## 6단계 — Conquest 리소스팩 (자동 안내)
+## 6단계 — (선택) Conquest 리소스팩 — 수동 설치
 
-서버 첫 접속 시 마인크래프트가 "리소스팩을 다운로드 하시겠습니까?"라고 묻습니다. **Yes** 누르면 자동으로 **Conquest 중세 리소스팩** (266MB)이 적용되어 도시·성·아이템이 사실적인 중세 비주얼로 변경됩니다.
+중세 사실적 비주얼을 원하면 Conquest 리소스팩을 본인 PC에 직접 설치하세요. 서버는 강제 안 함 — 깔고 싶은 사람만.
 
-- 권장 (필수 아님): Yes 클릭하면 한 번만 다운로드 후 캐시 → 재접속 시 즉시 로드
-- 거부도 OK: vanilla 그대로 즐겨도 게임 플레이 동일
+### Conquest 다운로드
+🔗 https://modrinth.com/resourcepack/conquest_/version/1.21.11
+
+위 페이지에서 `Conquest_1.21.11.zip` (266MB) 다운.
+
+### 설치
+
+=== "Windows"
+    1. `Win + R` → `%appdata%\.minecraft\resourcepacks\` 입력 → 폴더 열기
+    2. 다운로드한 zip 파일을 그대로 폴더에 복사 (압축 풀지 X)
+    3. 마인크래프트 실행 → 옵션 → 리소스팩 → "Conquest" 활성화 → 완료
+
+=== "Mac"
+    1. Finder → `Cmd + Shift + G` → `~/Library/Application Support/minecraft/resourcepacks/` 입력
+    2. 다운로드한 zip 파일을 그대로 폴더에 복사 (압축 풀지 X)
+    3. 마인크래프트 실행 → 옵션 → 리소스팩 → "Conquest" 활성화 → 완료
+
+=== "Linux"
+    1. `~/.minecraft/resourcepacks/` 열기
+    2. 다운로드한 zip 그대로 복사
+    3. 마인크래프트 옵션 → 리소스팩 → 활성화
+
+### Conquest 사용 권장 사항
+- **Optifine** 또는 **Iris** 모드 함께 사용 시 비주얼 더 풍부
+- 다운 안 해도 게임 플레이 동일 (vanilla 비주얼)
 
 ## 7단계 — (선택) OptiFine + 셰이더
 
